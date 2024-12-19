@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Variable Volatility Options Pricing
+    </title>
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+</head>
+<body>
+    <p>
+        Industry-standard options pricing relies on the Black-Scholes formula,
+        $$C = N(d_1)S_t-N(d_2)K e^{-r(T-t)}$$
+        $$\rm{for}\ d_1=\frac{\ln{S_t/K}+\left(r+\sigma^2/2\right)(T-t)}{\sigma\sqrt{(T-t)}}$$
+        $$\rm{and}\ d_2=d_1-\sigma\sqrt{T-t}$$
+          the solution to the Black-Scholes equation for a European option under
+          the assumption of constant implied volatility and a constant risk-free
+          rate. Another approach to options pricing utilizes binomial trees, but
+          these models traditionally assume constant volatility and risk-free 
+         interest rate as well. This app prices options with a binomial tree and
+          variable implied volatility. These variable volatilities are predicted
+          by a model trained on historical variability data and Black-Scholes 
+         input variables (underlying stock price, risk-free interest rate, market
+          price of the option, strike price, and time to expiration). More advanced
+          models are under development, trained on news sentiment analysis and past
+          implied volatility data.
+
+    </p>
+</body>
+</html>
